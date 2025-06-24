@@ -294,7 +294,7 @@ device = "mps" if torch.backends.mps.is_available() else "cpu"
 model.to(device)
 print(f"Device: {device}")
 
-model_weights = "/Users/maxkucher/face_generator/models/face_generator_VAE_09.pt"
+model_weights = "/Users/maxkucher/face_generator/models/face_generator_VAE_10.pt"
 model.load_state_dict(torch.load(model_weights, map_location=device))
 print("Model loaded.")
 
