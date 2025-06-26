@@ -15,7 +15,7 @@ This version of application was made with conditional VAE model - type of a usua
 Unlike usual autoencoders, VAE encodes information not into a single vector, but into a distribution of features - q(z|x), which is defined with two parameters: μ - center (mean) value of each distribution and σ - standard deviation (or logarithm of the standard deviation), which defines the spread (variance) of each element in the distribution. Then model sample a random vector Z from it, which will be decoded by decoder part of model and which may look like an original input. Z value could be sampled using μ and σ values with bext formula:
 
 ```
-z = μ + μ * e
+z = μ + σ  * e
 ```
 
 Where e - is a standart normal distribution N(0, I).
