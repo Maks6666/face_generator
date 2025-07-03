@@ -63,7 +63,7 @@ kl_weight = 1 / (1 + np.exp(-0.1 * (epoch - 5)))
 ### Note: 
 You may also try to use simple loss function to calculate loss between generated data and real, but make sure 
 you are using mean squared error instead of binary cross entropy - this one could led to bad quality of 
-generated images and to appearance of artifacts on it. 
+generated images and to appearance of artifacts on them. 
 
 ## Results:
 
